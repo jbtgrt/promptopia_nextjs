@@ -13,9 +13,8 @@ export const connectToDB = async () => {
 
   try {
     await mongoose.connect(mongoURI, {
-      dbName: "share_prompt",
       useNewUrlParser: true,
-      useUnifiedTopology: true,
+      useUnifiedTopology: true
     })
 
     isConnected = true;
